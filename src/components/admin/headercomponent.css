@@ -1,0 +1,23 @@
+.header-component {
+  display: flex;
+  align-items: center;
+}
+
+.header-component .search {
+  margin-right: 36px;
+}
+
+.header-component .search input {
+  border-top: 1px solid #9fa4a7;
+  height: 60px;
+  width: 400px;
+  padding: 0px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.header-component .support-chat {
+  margin-right: 36px;
+}

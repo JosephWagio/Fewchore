@@ -1,0 +1,152 @@
+.transactions-content {
+  padding: 24px 32px;
+}
+
+.transactions-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 3em;
+  margin-bottom: 40px;
+}
+
+.transactions-category .category-card {
+  flex: 1;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.transactions-category .category-card.active {
+  border: 2px solid #009b54;
+}
+
+.transactions-category .category-card h6 {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: #8b969b;
+}
+
+.transactions-category .category-card p {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #3d5059;
+}
+
+.transaction-search {
+  margin-bottom: 20px;
+}
+
+.transaction-search input {
+  padding: 0px 16px;
+  height: 66px;
+  width: 100%;
+  display: block;
+  background-color: #d7d7d852;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -1px;
+}
+
+.transaction-search input::placeholder {
+  color: #9fa4a7;
+}
+
+.transaction-table {
+}
+
+.transaction-table .header {
+  border-top: 1.2px solid #d0d4d6;
+  border-bottom: 1.2px solid #d0d4d6;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #9fa4a7;
+}
+
+.transaction-table .item {
+  border-bottom: 1.2px solid #d0d4d6;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #3d5059;
+}
+
+.transaction-table .header .account-name,
+.transaction-table .item .account-name {
+  flex: 1;
+}
+
+.transaction-table .header .account-name {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.transaction-table .header .amount,
+.transaction-table .item .amount {
+  width: 120px;
+}
+
+.transaction-table .item .amount span {
+  color: #abb3b7;
+}
+
+.transaction-table .header .category,
+.transaction-table .item .category {
+  width: 110px;
+}
+
+.transaction-table .header .account-num,
+.transaction-table .item .account-num {
+  width: 132px;
+}
+
+.transaction-table .header .date,
+.transaction-table .item .date {
+  width: 172px;
+}
+
+.transaction-table .header .status,
+.transaction-table .item .status {
+  width: 100px;
+}
+
+.transaction-table .item .status[status="Successful"] {
+  color: #009b54;
+}
+
+.transaction-table .item .status[status="Declined"] {
+  color: #fb5e5a;
+}
+
+.transaction-table .header .action,
+.transaction-table .item .action {
+  width: 65px;
+}
+
+.transaction-table .item .action svg {
+  margin: 0 auto;
+  display: block;
+}
