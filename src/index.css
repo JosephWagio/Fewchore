@@ -29,9 +29,37 @@ button {
   cursor: pointer;
 }
 
+.danger-btn {
+  background-color: #f6cfce3d;
+  border: none;
+  color: #fc3833;
+  cursor: pointer;
+}
+
 .transparent-btn {
   background-color: #ffffff;
   border: none;
+  color: #009b54;
+  cursor: pointer;
+}
+
+.danger-border-btn {
+  background-color: #ffffff;
+  border: 1.5px solid #fc3833;
+  color: #fc3833;
+  cursor: pointer;
+}
+
+.dark-border-btn {
+  background-color: #ffffff;
+  border: 1.5px solid #3d5059;
+  color: #3d5059;
+  cursor: pointer;
+}
+
+.transparent-border-btn {
+  background-color: #ffffff;
+  border: 1.5px solid #009b54;
   color: #009b54;
   cursor: pointer;
 }

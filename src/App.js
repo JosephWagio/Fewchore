@@ -1,10 +1,12 @@
 import React from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Login, Admin } from "./components";
 import {
   Overview,
   Transactions,
   Notifications,
+  Cards,
+  Customers,
 } from "./components/admin/screens";
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="overview" element={<Overview />}></Route>
         <Route path="transactions" element={<Transactions />}></Route>
         <Route path="notifications" element={<Notifications />}></Route>
+        <Route path="cards" element={<Cards />}></Route>
+        <Route path="customers" element={<Customers />}></Route>
         <Route path="*" element={<Login />}></Route>
       </Route>
       <Route path="/*" element={<Admin />}></Route>
